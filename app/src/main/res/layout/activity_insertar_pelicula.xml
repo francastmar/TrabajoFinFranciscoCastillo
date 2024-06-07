@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".administracion.InsertarPelicula">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título"
+        android:textSize="25sp"
+        android:inputType="textPersonName"
+        style="@style/CustomEditText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+      >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Director:"
+          android:textSize="25sp"
+          />
+      <Spinner
+          android:id="@+id/spinnerDirector"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:outlineSpotShadowColor="@color/rosa"
+          android:popupBackground="@color/black"
+          android:layout_marginStart="16dp"
+          style="@style/CustomSpinner"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Genero:"
+          android:textSize="25sp"
+          />
+      <Spinner
+          android:id="@+id/spinnerGenero"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:popupBackground="@color/black"
+          android:outlineSpotShadowColor="@color/rosa"
+          android:layout_marginStart="16dp"
+          android:layout_marginEnd="16dp"
+          style="@style/CustomSpinner"
+          />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Pais:"
+          android:textSize="25sp"
+          />
+      <Spinner
+          android:id="@+id/spinnerPais"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:popupBackground="@color/black"
+          android:outlineSpotShadowColor="@color/rosa"
+          android:layout_marginStart="16dp"
+          style="@style/CustomSpinner"
+          />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/et_anio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Año"
+        android:inputType="number"
+        android:textSize="25sp"
+        style="@style/CustomEditText"/>
+
+    <EditText
+        android:id="@+id/et_idioma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Idioma"
+        android:textSize="25sp"
+        android:inputType="textPersonName"
+        style="@style/CustomEditText"/>
+
+    <EditText
+        android:id="@+id/et_duracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Duración (minutos)"
+        android:inputType="number"
+        android:textSize="25sp"
+        style="@style/CustomEditText"/>
+
+    <EditText
+        android:id="@+id/et_sinopsis"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Sinopsis"
+        android:textSize="25sp"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:maxLines="6"
+        style="@style/CustomEditText"/>
+
+    <ImageView
+        android:id="@+id/portadaPreview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/botonanadirfoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Añadir Portada" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Añade" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-50dp"
+        android:text="Actualiza" />
+
+  </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".peliculas.Fragment1">
+
+    <TextView
+        android:id="@+id/txtSeccion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="PELICULAS"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:outlineSpotShadowColor="@color/rosa"
+            android:layout_marginTop="-30dp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_marginTop="-30dp"
+            android:outlineSpotShadowColor="@color/rosa"
+            android:layout_marginEnd="10dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:layout_marginTop="-30dp"
+            android:gravity="start"
+            android:outlineSpotShadowColor="@color/rosa"
+            />
+
+        <Button
+            android:id="@+id/btnResetFiltros"
+            android:layout_width="32dp"
+            android:layout_height="50dp"
+            android:drawableTop="@android:drawable/ic_menu_revert"
+            android:layout_weight="0"
+            android:layout_marginRight="12dp"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="630dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="32dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+</FrameLayout>

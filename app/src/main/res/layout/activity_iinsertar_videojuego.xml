@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".administracion.IInsertarVideojuego">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/et_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título"
+            android:textSize="25sp"
+            android:inputType="textPersonName"
+            style="@style/CustomEditText"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plataforma:"
+                android:textSize="25sp"
+                />
+            <Spinner
+                android:id="@+id/spinnerPlataforma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:outlineSpotShadowColor="@color/rosa"
+                android:popupBackground="@color/black"
+                android:layout_marginStart="16dp"
+                style="@style/CustomSpinner"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distribuidora:"
+                android:textSize="25sp"
+                />
+            <Spinner
+                android:id="@+id/spinnerDistribuidora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/black"
+                android:outlineSpotShadowColor="@color/rosa"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                style="@style/CustomSpinner"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desarrolladora:"
+                android:textSize="25sp"
+                />
+            <Spinner
+                android:id="@+id/spinnerDesarrolladora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/black"
+                android:outlineSpotShadowColor="@color/rosa"
+                android:layout_marginStart="16dp"
+                style="@style/CustomSpinner"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Género:"
+                android:textSize="25sp"
+                />
+            <Spinner
+                android:id="@+id/spinnerGeneroVideojuego"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/black"
+                android:outlineSpotShadowColor="@color/rosa"
+                android:layout_marginStart="16dp"
+                style="@style/CustomSpinner"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_anio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Año"
+            android:inputType="number"
+            android:textSize="25sp"
+            style="@style/CustomEditText"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_multijugador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Multijugador"
+                android:textColor="@color/azul"
+                android:textSize="25sp"/>
+
+            <CheckBox
+                android:id="@+id/cb_doblado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doblado"
+                android:textColor="@color/azul"
+                android:layout_weight="50"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/portadaPreview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/botonanadirfoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Añadir Portada" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Añade" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:text="Actualiza" />
+
+    </LinearLayout>
+
+</ScrollView>

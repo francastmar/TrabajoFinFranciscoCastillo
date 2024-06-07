@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".administracion.InsertarCliente">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            style="@style/CustomEditText"/>
+
+        <EditText
+            android:id="@+id/et_apellido1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido 1"
+            android:inputType="textPersonName"
+            style="@style/CustomEditText"/>
+
+        <EditText
+            android:id="@+id/et_apellido2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido 2"
+            android:inputType="textPersonName"
+            style="@style/CustomEditText"/>
+
+        <EditText
+            android:id="@+id/et_Direccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Diercción"
+            android:inputType="textPostalAddress"
+            style="@style/CustomEditText"/>
+
+        <EditText
+            android:id="@+id/et_mail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo Electrónico"
+            android:inputType="textEmailAddress"
+            style="@style/CustomEditText"/>
+
+        <EditText
+            android:id="@+id/et_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:maxLength="9"
+            style="@style/CustomEditText"/>
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de Usuario"
+            android:inputType="textPersonName"
+            style="@style/CustomEditText"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/et_contrasenya"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                style="@style/CustomEditText"/>
+
+            <ImageButton
+                android:id="@+id/btn_ver"
+                android:layout_marginTop="16dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/eye_closed"
+                android:contentDescription="Ver contraseña"
+                app:tint="@color/rosa" />
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/tv_fecha_nacimiento_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de Nacimiento"
+            android:textColor="@color/rosa"
+            android:paddingTop="16dp" />
+
+        <DatePicker
+            android:id="@+id/datePicker_fecha_nacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:calendarTextColor="@color/rosa"
+            android:dayOfWeekBackground="@color/rosa"
+            android:dayOfWeekTextAppearance="@color/rosa"
+            android:headerBackground="@color/rosa"
+            android:datePickerMode="calendar"
+            android:background="@color/rosa"
+            />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Añade" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:text="Actualiza" />
+    </LinearLayout>
+
+
+
+</ScrollView>

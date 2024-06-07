@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_seccion_1"
+            android:title="@string/peliculas"/>
+        <item
+            android:id="@+id/menu_seccion_2"
+            android:title="@string/videojuegos"/>
+        <item
+            android:id="@+id/menu_seccion_3"
+            android:title="@string/mis_productos"/>
+    </group>
+
+    <item
+        android:id="@+id/navigation_subheader"
+        android:title="@string/administraci_n">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_opcion_4"
+                    android:title="@string/administrar_peliculas"/>
+                <item
+                    android:id="@+id/menu_opcion_5"
+                    android:title="@string/administrar_juegos"/>
+                <item
+                    android:id="@+id/menu_opcion_6"
+                    android:title="@string/administrar_clientes"/>
+                <item
+                    android:id="@+id/menu_opcion_7"
+                    android:title="@string/tablas"/>
+            </group>
+        </menu>
+    </item>
+</menu>

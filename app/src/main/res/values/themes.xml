@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Examen2evFranciscoCastillo1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#FD5B67 </item>
+        <item name="colorPrimaryVariant">#D8BFD8</item>
+        <!-- Definir el color de fondo de las actividades -->
+        <item name="android:windowBackground">#212121</item>
+        <!-- Definir el color de texto -->
+        <item name="android:textColor">#ffced1</item>
+        <item name="colorButtonNormal">#FD5B67</item>
+        <item name="colorAccent">#FF9C00</item>
+    </style>
+
+    <style name="Theme.Examen2evFranciscoCastillo1" parent="Base.Theme.Examen2evFranciscoCastillo1" />
+
+    <style name="Theme.Examen2evFranciscoCastillo1.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Examen2evFranciscoCastillo1.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Examen2evFranciscoCastillo1.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
