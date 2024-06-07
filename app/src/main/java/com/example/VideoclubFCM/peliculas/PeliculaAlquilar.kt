@@ -62,7 +62,6 @@ class PeliculaAlquilar : AppCompatActivity() {
         val persona = MainActivity.getPersona()
 
         if (pelicula != null) {
-
             txtTitulo.text = pelicula.titulo_original
             txtDirector.text = "Director: ${pelicula.directores.nombre}"
             txtGenero.text = "Género: ${pelicula.generos.joinToString(", ") { it.nombre }}"
@@ -92,7 +91,6 @@ class PeliculaAlquilar : AppCompatActivity() {
                                 null,
                                 pelicula.productos
                             )
-
                             insertarDatos(alquiler)
                         } else {
                             Toast.makeText(
@@ -128,8 +126,7 @@ class PeliculaAlquilar : AppCompatActivity() {
         val fechaHoyMasUnaSemana = calendar.time
         // Formatear la fecha de una semana más a un string con el formato "AAAA-MM-DD"
         val fechaHoyMasUnaSemanaFormatted = dateFormat.format(fechaHoyMasUnaSemana)
-
-
+        
         val api: Api = retrofit!!.create(Api::class.java)
 
         api.guardarAlquiler(
