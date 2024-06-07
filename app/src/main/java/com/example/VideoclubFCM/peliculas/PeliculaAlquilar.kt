@@ -152,10 +152,10 @@ class PeliculaAlquilar : AppCompatActivity() {
                             .show()
                     }
                 } else {
-                    Log.d("Respuesta", "Sin respuesta del servidor")
+                    Log.d("Respuestaa", "Sin respuesta del servidor")
                     Toast.makeText(
                         applicationContext,
-                        "Fallo en la respuesta del alquiler",
+                        "Fallo en la respuesta del alquilerrr",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
