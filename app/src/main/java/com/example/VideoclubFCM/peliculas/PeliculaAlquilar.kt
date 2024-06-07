@@ -57,7 +57,6 @@ class PeliculaAlquilar : AppCompatActivity() {
         if (MainActivity.isInvitado()) {
             btnAlquilar.isVisible = false
         }
-
         val pelicula: Pelicula? = intent.getParcelableExtra("pelicula")
         // persona de MainActivity (quien se ha logueado)
         val persona = MainActivity.getPersona()
